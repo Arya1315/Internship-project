@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="info.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+</head>
+<body>
+  <h1 style="color: #99e77d; margin-left: 35%;">Follow steps to change battery</h1>
+    <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+        <h1>Step 1: Arrive at Battery Swap Station</h1>
+        <h4 style="padding: 40px;">The first step in the battery swapping process is to drive your electric vehicle to the nearest battery swapping station. These stations are equipped with the necessary infrastructure to perform quick battery exchanges. Some stations may require prior booking through a mobile application, especially in busy areas. The driver positions the vehicle at the designated spot for the swap process.</h4>
+    </div>
+    <div class="swiper-slide">
+        <h1>Step 2: Vehicle Authentication</h1>
+        <h4 style="padding: 40px;">Once the vehicle is positioned correctly, authentication is required to initiate the swapping process. This can be done using an RFID card, scanning a QR code from the mobile app, or through automatic number plate recognition. The system verifies the user's identity, subscription details, or payment options before proceeding.</h4>
+    </div>
+    
+    <div class="swiper-slide">
+        <h1>Step 3: Battery Compartment Access</h1>
+        <h4 style="padding: 40px;">After successful authentication, the battery compartment is accessed. In most modern EVs, this process is automated, where the station unlocks the battery compartment using its system. In some setups, the driver may need to manually open the battery area to facilitate removal.</h4>
+    </div>
+    
+    <div class="swiper-slide">
+        <h1>Step 4: Remove Depleted Battery</h1>
+        <h4 style="padding: 40px;">Once the battery compartment is open, the system or station personnel safely remove the depleted battery pack from the vehicle. Automated robotic arms are commonly used for this process to ensure safety and efficiency. Before replacement, the system may run checks on the removed battery to assess its health and usability.</h4>
+    </div>
+    
+    <div class="swiper-slide">
+        <h1>Step 5: Install Fully Charged Battery</h1>
+        <h4 style="padding: 40px;" >A fully charged and tested battery pack is then installed in the vehicle. The system ensures proper alignment and secure connection of the new battery. This step is crucial to guarantee that the vehicle receives a battery in optimal condition, ready for use.</h4>
+    </div>
+    <div class="swiper-slide">
+        <h1>Step 6: System Diagnostics Check</h1>
+        <h4 style="padding: 40px;">After installing the new battery, the vehicle runs a quick system diagnostic to confirm that the battery is properly connected and functioning as expected. The driver receives confirmation on the vehicle dashboard or through the mobile application, ensuring everything is in order.</h4>
+    </div>
+    
+    <div class="swiper-slide">
+        <h1>Step 7: Payment and Billing</h1>
+        <h4 style="padding: 40px;">The next step involves processing the payment for the battery swap. Depending on the service model, users may be charged on a subscription basis or through a pay-per-swap system. Payment is often handled automatically via the mobile app, and a digital receipt is generated for the user’s record.</h4>
+    </div>
+    <div class="swiper-slide">
+        <h1>Step 8: Ready to Drive</h1>
+        <h4 style="padding: 40px;" >Once the diagnostics are successful and payment is completed, the driver is free to continue their journey. The entire battery swapping process typically takes around 3 to 5 minutes, providing a convenient and time-efficient alternative to traditional charging methods.</h4>
+    </div>
+    
+    
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+ <h2 style="color: #99e77d; margin-left: 35%; margin-top: 2%;">Disclaimer</h2>
+      <p style="color: #99e77d; margin-left: 35%; margin-right: 35%;">The information provided is for educational purposes only. The actual battery swapping process may vary depending on vehicle type, station technology, and regional regulations.</p>
+  
+
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+
+</body>
+</html>

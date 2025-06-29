@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    
+    }
+
+    body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(photo11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /* Change to desired transparency */
+    z-index: -1;
+    }
+
+.app{
+    background-color: #99e77d;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.app h1{
+    font-size:25px ;
+    color: black;
+    font-weight: 600;
+    border-bottom: 1px solid black ;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+.but{
+    background-color: white;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.but:hover{
+    background-color: #959292;
+}
+
+#next{
+    background-color: #333;
+    color: #959292;
+    font-weight: 500;
+    width:150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+
+}

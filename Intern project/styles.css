@@ -1,0 +1,94 @@
+/* For index.html*/
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+
+    body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(photo11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /* Change to desired transparency */
+    z-index: -1;
+}
+
+.login-container {
+    background-color: #99e779;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    opacity: 1;
+    }
+
+.login-container h2 {
+    margin-bottom: 20px;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    }
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    }
+    
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    }
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;        
+    }
+.form-group input[type="submit"]:hover {
+    background-color: #14181d;
+    }
+.forgot-password {
+    
+    margin-top: 15px;
+    font-size: 14px;
+    gap: 10px;
+
+    }
+.forgot-password a { 
+    margin: 15px;          
+    text-decoration: none;
+    color: black;
+    }
+.forgot-password a:hover {
+    text-decoration: underline;
+    }
+
+
+    
